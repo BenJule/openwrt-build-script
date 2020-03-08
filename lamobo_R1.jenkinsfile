@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-node {
+agent { node { label 'ben' }
     def TARGET = 'lamobo_R1'
     def UPLOAD_FILE = "openwrt/bin/targets/sunxi/cortexa7/lede-18.06.1-sunxi-cortexa7-sun7i-a20-lamobo-r1-ext4-sdcard.img.gz"
     def ARCHIVE_NAME = 'lede-18.06.1-sunxi-cortexa7-sun7i-a20-lamobo-r1-ext4-sdcard.img.gz'
